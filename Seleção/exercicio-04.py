@@ -2,8 +2,8 @@
 # média calculada seja menor que 6.0.
 
 #entrada
-avaliacao1 = float(input("Digite a nota que você recebeu na primeira avaliação deste semestre:"))
-avaliacao2 = float(input("Digite a nota que você recebeu na segunda avaliação deste semestre:"))
+avaliacao1 = float(input("Digite a nota que você recebeu na primeira avaliação deste semestre: ").replace(',','.'))
+avaliacao2 = float(input("Digite a nota que você recebeu na segunda avaliação deste semestre: ").replace(',','.'))
 
 #processamento
 mensagem = ""

@@ -5,7 +5,7 @@
 #entrada
 maca = 0.30
 macaporduzia = 0.25
-macascomprada = int(input("Quantas maçãs você comprou ?"))
+macascomprada = int(input("Quantas maçãs você comprou? "))
 
 #processamento
 valortotal = ""

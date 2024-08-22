@@ -6,19 +6,19 @@ from datetime import date
 
 #entrada
 #anoAtual = date.today().year
-anoNascimento = int(input("Qual ano você nasceu?"))
+anoNascimento = int(input("Qual ano você nasceu? "))
 
 #processamento
 def verificarOpcao():
     #idade = anoAtual - anoNascimento
     if (idade(anoNascimento) > 16):
-        return "sim"
+        return "Sim"
     else:
-        return "não"
+        return "Não"
 def idade(nascimento):
     anoAtual = date.today().year
     return anoAtual - anoNascimento
 
 #saida  
 print("Você poderá votar?:", verificarOpcao())  
-print("Porque você tem", idade(anoNascimento), "anos")
+print("Porque você tem", idade(anoNascimento), "anos.")

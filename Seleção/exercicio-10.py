@@ -5,4 +5,3 @@
 valor1 = float(input("Digite um valor: ").replace(',','.'))
 valor2 = float(input("Digite um segundo valor: ").replace(',','.'))
 valor3 = float(input("Digite um terceiro valor: ").replace(',','.'))
-print(valor1)

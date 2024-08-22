@@ -1,16 +1,16 @@
 #
 
 #entradas
-valor =int(input("Escreva um valor: "))
+valor =  float(input("Escreva um valor: ").replace(',','.'))
 
 #processamento
 resposta= ""
 if valor == 0:
-    resposta = "zero"
+    resposta = "zero."
 elif valor > 0:
-    resposta = "positivo"
+    resposta = "positivo."
 else:
-    resposta = "negativo" 
+    resposta = "negativo." 
 
 #saidas
 print("O seu valor é", resposta)

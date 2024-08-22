@@ -12,9 +12,20 @@ avaliacao2 = float(input("Digite a nota que você recebeu na segunda avaliação
 verificarOptativa = input("Você fez o teste optativo ? ")
 
 #processamento
-media = ""
 if  verificarOptativa == "sim":
-    optatitaNota = float(input("Digite a nota que você recebeu na avaliação optativa: ").replace(',','.'))
-else: optatitaNota = -1    
+    optativaNota = float(input("Digite a nota que você recebeu na avaliação optativa: ").replace(',','.'))
+    
+else:
+    optativaNota = -1
+    media = (avaliacao1 + avaliacao2 + optativaNota) / 2    
+    print(media)
+    exit()
 
-print(optatitaNota)
+if avaliacao1 > avaliacao2:
+    avaliacao2 = optativaNota
+    media = (avaliacao1 + optativaNota) / 2
+    print(media)
+else: 
+    avaliacao1 = optativaNota
+    media = (avaliacao2 + optativaNota) / 2
+    print(media)
