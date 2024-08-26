@@ -18,14 +18,14 @@ if  verificarOptativa == "sim":
 else:
     optativaNota = -1
     media = (avaliacao1 + avaliacao2 + optativaNota) / 2    
-    print(media)
+    print("Sua média do semestre foi: ", media)
     exit()
 
 if avaliacao1 > avaliacao2:
     avaliacao2 = optativaNota
     media = (avaliacao1 + optativaNota) / 2
-    print(media)
+    print("Sua média do semestre foi: ", media)
 else: 
     avaliacao1 = optativaNota
     media = (avaliacao2 + optativaNota) / 2
-    print(media)
+    print("Sua média do semestre foi: ", media)
